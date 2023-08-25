@@ -1,3 +1,5 @@
 # MSWord_WhatElement
 
-A simple VBA macro for Word that checks whether your selected text is an element symbol on the periodic table, and, if so, what the full name of the element is. This was created primarily to help with editing of indefinite articles around chemical symbols in academic texts, as certain publishers have specific, sometimes unintuitive rules around the use of these items (e.g., that you use "a" before Au, rather than "an", because you'd read the phrase "a Au atom" as "a gold atom", for instance).
+VBA macros for word that allow for input of a chemical symbol, with an output telling you what the full name is (WhatElement), or vice versa (WhatChemSymbol).
+
+The search functionality works by first checking against selected text, or, if it can't find anything, by allowing the user to input the element symbol (WhatElement) or name (WhatChemSymbol) before checking.
