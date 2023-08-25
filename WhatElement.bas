@@ -2,7 +2,7 @@ Attribute VB_Name = "WhatElement"
 Sub WhatElement()
 
 Dim PeriodicTable
-Dim seltext As String
+Dim givenelement As String
 Dim counter As Integer
 Dim selrange As Range
 Dim selStart, selEnd As Long
@@ -15,11 +15,12 @@ selEnd = selection.End
 selrange.SetRange Start:=selStart, End:=selEnd
 selrange.Select
 
-seltext = selrange.Text
-
 If selection.Range.ComputeStatistics(wdStatisticWords) < 1 Then
-    MsgBox "Nothing selected."
-    Exit Sub
+    givenelement = InputBox("Please input element symbol:")
+    counter = 1
+    Else
+        givenelement = selrange.Text
+        counter = 0
 End If
 
 ' Creating a dictionary of all elements in the table, with the symbols as the keys
@@ -144,10 +145,18 @@ With PeriodicTable
     .Add "Og", "Oganesson"
 End With
 
-If PeriodicTable.Exists(seltext) Then
-    MsgBox "Element symbol: " & selection & vbCrLf & "Full name: " & PeriodicTable.Item(seltext)
+Check:
+If PeriodicTable.Exists(givenelement) Then
+    MsgBox "Element symbol: " & givenelement & vbCrLf & "Full name: " & PeriodicTable.Item(givenelement)
+    Exit Sub
     Else
-        MsgBox "Sorry, element not found."
+        If counter > 0 Then
+            MsgBox "Sorry, element not found."
+        Else
+            counter = counter + 1
+            givenelement = InputBox("Please input element symbol:")
+            GoTo Check
+        End If
 End If
 
 End Sub
