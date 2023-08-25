@@ -146,6 +146,7 @@ With PeriodicTable
 End With
 
 Check:
+givenelement = StrConv(givenelement, vbProperCase)
 If PeriodicTable.Exists(givenelement) Then
     MsgBox "Element symbol: " & PeriodicTable.Item(givenelement) & vbCrLf & "Full name: " & givenelement
     Exit Sub
