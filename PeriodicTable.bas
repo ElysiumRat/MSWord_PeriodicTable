@@ -1,7 +1,7 @@
 Attribute VB_Name = "PeriodicTable"
 Sub PeriodicTable()
 
-Dim prdtbl(118, 1) As String
+Dim prdtbl(117, 1) As String
 Dim givenval, temp As String
 Dim counter, iterations, smlcount As Integer
 Dim found As Boolean
@@ -268,10 +268,14 @@ Check:
 For counter = 0 To 117
     For smlcount = 0 To 1
     temp = UCase(prdtbl(counter, smlcount))
-        If temp Like givenval Then
-            MsgBox "Element symbol: " & prdtbl(counter, 0) & vbCrLf & "Element name: " & prdtbl(counter, 1)
-            found = True
-            Exit For
+        If givenval = "**" Then
+            Exit Sub
+            Else
+            If temp Like givenval Then
+                MsgBox "Element symbol: " & prdtbl(counter, 0) & vbCrLf & "Element name: " & prdtbl(counter, 1)
+                found = True
+                Exit For
+            End If
         End If
     Next smlcount
 Next counter
