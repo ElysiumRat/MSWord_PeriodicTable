@@ -1,7 +1,7 @@
 Attribute VB_Name = "PeriodicTable"
 Sub PeriodicTable()
 
-Dim prdtbl(117, 1) As String
+Dim prdtbl(117, 2) As String
 Dim givenval, temp As String
 Dim counter, iterations, smlcount As Integer
 Dim found As Boolean
@@ -250,6 +250,127 @@ prdtbl(115, 1) = "Livermorium"
 prdtbl(116, 1) = "Tennessine"
 prdtbl(117, 1) = "Oganesson"
 
+' Table numbers
+
+prdtbl(0, 2) = "1"
+prdtbl(1, 2) = "2"
+prdtbl(2, 2) = "3"
+prdtbl(3, 2) = "4"
+prdtbl(4, 2) = "5"
+prdtbl(5, 2) = "6"
+prdtbl(6, 2) = "7"
+prdtbl(7, 2) = "8"
+prdtbl(8, 2) = "9"
+prdtbl(9, 2) = "10"
+prdtbl(10, 2) = "11"
+prdtbl(11, 2) = "12"
+prdtbl(12, 2) = "13"
+prdtbl(13, 2) = "14"
+prdtbl(14, 2) = "15"
+prdtbl(15, 2) = "16"
+prdtbl(16, 2) = "17"
+prdtbl(17, 2) = "18"
+prdtbl(18, 2) = "19"
+prdtbl(19, 2) = "20"
+prdtbl(20, 2) = "21"
+prdtbl(21, 2) = "22"
+prdtbl(22, 2) = "23"
+prdtbl(23, 2) = "24"
+prdtbl(24, 2) = "25"
+prdtbl(25, 2) = "26"
+prdtbl(26, 2) = "27"
+prdtbl(27, 2) = "28"
+prdtbl(28, 2) = "29"
+prdtbl(29, 2) = "30"
+prdtbl(30, 2) = "31"
+prdtbl(31, 2) = "32"
+prdtbl(32, 2) = "33"
+prdtbl(33, 2) = "34"
+prdtbl(34, 2) = "35"
+prdtbl(35, 2) = "36"
+prdtbl(36, 2) = "37"
+prdtbl(37, 2) = "38"
+prdtbl(38, 2) = "39"
+prdtbl(39, 2) = "40"
+prdtbl(40, 2) = "41"
+prdtbl(41, 2) = "42"
+prdtbl(42, 2) = "43"
+prdtbl(43, 2) = "44"
+prdtbl(44, 2) = "45"
+prdtbl(45, 2) = "46"
+prdtbl(46, 2) = "47"
+prdtbl(47, 2) = "48"
+prdtbl(48, 2) = "49"
+prdtbl(49, 2) = "50"
+prdtbl(50, 2) = "51"
+prdtbl(51, 2) = "52"
+prdtbl(52, 2) = "53"
+prdtbl(53, 2) = "54"
+prdtbl(54, 2) = "55"
+prdtbl(55, 2) = "56"
+prdtbl(56, 2) = "57"
+prdtbl(57, 2) = "58"
+prdtbl(58, 2) = "59"
+prdtbl(59, 2) = "60"
+prdtbl(60, 2) = "61"
+prdtbl(61, 2) = "62"
+prdtbl(62, 2) = "63"
+prdtbl(63, 2) = "64"
+prdtbl(64, 2) = "65"
+prdtbl(65, 2) = "66"
+prdtbl(66, 2) = "67"
+prdtbl(67, 2) = "68"
+prdtbl(68, 2) = "69"
+prdtbl(69, 2) = "70"
+prdtbl(70, 2) = "71"
+prdtbl(71, 2) = "72"
+prdtbl(72, 2) = "73"
+prdtbl(73, 2) = "74"
+prdtbl(74, 2) = "75"
+prdtbl(75, 2) = "76"
+prdtbl(76, 2) = "77"
+prdtbl(77, 2) = "78"
+prdtbl(78, 2) = "79"
+prdtbl(79, 2) = "80"
+prdtbl(80, 2) = "81"
+prdtbl(81, 2) = "82"
+prdtbl(82, 2) = "83"
+prdtbl(83, 2) = "84"
+prdtbl(84, 2) = "85"
+prdtbl(85, 2) = "86"
+prdtbl(86, 2) = "87"
+prdtbl(87, 2) = "88"
+prdtbl(88, 2) = "89"
+prdtbl(89, 2) = "90"
+prdtbl(90, 2) = "91"
+prdtbl(91, 2) = "92"
+prdtbl(92, 2) = "93"
+prdtbl(93, 2) = "94"
+prdtbl(94, 2) = "95"
+prdtbl(95, 2) = "96"
+prdtbl(96, 2) = "97"
+prdtbl(97, 2) = "98"
+prdtbl(98, 2) = "99"
+prdtbl(99, 2) = "100"
+prdtbl(100, 2) = "101"
+prdtbl(101, 2) = "102"
+prdtbl(102, 2) = "103"
+prdtbl(103, 2) = "104"
+prdtbl(104, 2) = "105"
+prdtbl(105, 2) = "106"
+prdtbl(106, 2) = "107"
+prdtbl(107, 2) = "108"
+prdtbl(108, 2) = "109"
+prdtbl(109, 2) = "110"
+prdtbl(110, 2) = "111"
+prdtbl(111, 2) = "112"
+prdtbl(112, 2) = "113"
+prdtbl(113, 2) = "114"
+prdtbl(114, 2) = "115"
+prdtbl(115, 2) = "116"
+prdtbl(116, 2) = "117"
+prdtbl(117, 2) = "118"
+
 ' User input
 
 Set selrange = ActiveDocument.Range
@@ -259,22 +380,22 @@ selrange.SetRange Start:=selStart, End:=selEnd
 selrange.Select
 
 If selection.Range.ComputeStatistics(wdStatisticWords) < 1 Then
-    givenval = UCase("*" + InputBox("Please input element symbol or name:") + "*")
+    givenval = UCase("*" + InputBox("Please input element symbol, name, or atomic number:") + "*")
     Else
         givenval = UCase("*" + selrange.Text + "*")
 End If
 
 Check:
 For counter = 0 To 117
-    For smlcount = 0 To 1
+    For smlcount = 0 To 2
     temp = UCase(prdtbl(counter, smlcount))
         If givenval = "**" Then
             Exit Sub
-            Else
+        Else
             If temp Like givenval Then
-                MsgBox "Element symbol: " & prdtbl(counter, 0) & vbCrLf & "Element name: " & prdtbl(counter, 1)
+                MsgBox "Element symbol: " & prdtbl(counter, 0) & vbCrLf & "Element name: " & prdtbl(counter, 1) & vbCrLf & "Atomic number: " & prdtbl(counter, 2)
                 found = True
-                Exit For
+                Exit Sub
             End If
         End If
     Next smlcount
@@ -282,7 +403,7 @@ Next counter
 
 If found = False Then
     If selection.Range.ComputeStatistics(wdStatisticWords) = 1 And iterations < 1 Then
-        givenval = UCase("*" + InputBox("Please input element symbol or name:") + "*")
+        givenval = UCase("*" + InputBox("Please input element symbol, name, or atomic number:") + "*")
         iterations = 1
         GoTo Check
     End If
