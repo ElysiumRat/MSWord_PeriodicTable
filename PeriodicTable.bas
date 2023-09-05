@@ -3,8 +3,8 @@ Sub PeriodicTable()
 
 Dim prdtbl(117, 2) As String
 Dim givenval, temp As String
-Dim counter, iterations, smlcount As Integer
-Dim found As Boolean
+Dim counter, smlcount As Integer
+Dim found, alreadyrun As Boolean
 Dim selrange As Range
 Dim selStart, selEnd As Long
 
@@ -402,9 +402,9 @@ For counter = 0 To 117
 Next counter
 
 If found = False Then
-    If selection.Range.ComputeStatistics(wdStatisticWords) = 1 And iterations < 1 Then
+    If selection.Range.ComputeStatistics(wdStatisticWords) = 1 And alreadyrun = False Then
         givenval = UCase("*" + InputBox("Please input element symbol, name, or atomic number:") + "*")
-        iterations = 1
+        alreadyrun = True
         GoTo Check
     End If
     MsgBox "Element not found."
