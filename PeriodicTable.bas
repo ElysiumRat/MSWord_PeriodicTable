@@ -393,9 +393,12 @@ For counter = 0 To 117
             Exit Sub
         Else
             If temp Like givenval Then
-                MsgBox "Element symbol: " & prdtbl(counter, 0) & vbCrLf & "Element name: " & prdtbl(counter, 1) & vbCrLf & "Atomic number: " & prdtbl(counter, 2)
+                msg = "Element symbol: " & prdtbl(counter, 0) & vbCrLf & "Element name: " & prdtbl(counter, 1) & vbCrLf & "Atomic number: " & prdtbl(counter, 2) & vbCrLf & vbCrLf & "Is this the element you were looking for?"
+                response = MsgBox(msg, vbYesNo)
+                If response = vbYes Then
+                    Exit Sub
+                End If
                 found = True
-                Exit Sub
             End If
         End If
     Next smlcount
